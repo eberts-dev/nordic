@@ -1,28 +1,27 @@
 :root {
-  /* grid */
-  --main-width: 1180px;
-  --phone-width: 335px;
-  --pad-wrapper: 720px;
-  --desctop-wrapper: 1140px;
-  --phone-wrapper: 320px;
+	/* grid */
+	--main-width: 1180px;
+	--phone-width: 335px;
+	--pad-wrapper: 720px;
+	--desctop-wrapper: 1140px;
+	--phone-wrapper: 320px;
 
-  /* color */
-  --white: #ffffff;
-  --grey: #F3F5F8;
-  --btn-text: #222733;
-  --grey-text: #545E76;
-  --border: #E5E8EF;
-  --b-shadow: 28px 24px 60px 0px rgba(31, 47, 85, 0.12);
-  --bg-data: rgba(84, 94, 118, 0.12);
-  --options: rgba(242, 244, 247, 0.80);
-  --birder-line: rgba(84, 94, 118, 0.20);
-  --input-bg: rgba(84, 94, 118, 0.04);
-  --menu-schadow: 0px 1px 2px 0px #bbb;
-  --menu-display-schadow: 0px 14px 32px 0px rgba(44, 56, 70, 0.15);
+	/* color */
+	--white: #ffffff;
+	--grey: #f3f5f8;
+	--btn-text: #222733;
+	--grey-text: #545e76;
+	--border: #e5e8ef;
+	--b-shadow: 28px 24px 60px 0px rgba(31, 47, 85, 0.12);
+	--bg-data: rgba(84, 94, 118, 0.12);
+	--options: rgba(242, 244, 247, 0.8);
+	--birder-line: rgba(84, 94, 118, 0.2);
+	--input-bg: rgba(84, 94, 118, 0.04);
+	--menu-schadow: 0px 1px 2px 0px #bbb;
+	--menu-display-schadow: 0px 14px 32px 0px rgba(44, 56, 70, 0.15);
 }
 
 p {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
-
