@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'LabGrotesque-700';
+  src: url('../fonts/LabGrotesque-700.woff') format("woff"),
+       url('../fonts/LabGrotesque-700.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'LabGrotesque-500';
+  src: url('../fonts/LabGrotesque-500.woff') format("woff"),
+       url('../fonts/LabGrotesque-500.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'LabGrotesque-400';
+  src: url('../fonts/LabGrotesque-400.woff') format("woff"),
+       url('../fonts/LabGrotesque-400.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'LabGrotesque-300';
+  src: url('../fonts/LabGrotesque-300.woff') format("woff"),
+       url('../fonts/LabGrotesque-300.woff2') format("woff2");
+}

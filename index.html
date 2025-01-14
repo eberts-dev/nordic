@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon@1x.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Nordic</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="header__address">Лучший кейтеринг в Санкт-Петербурге</div>
+        <div class="header__contact">
+          <div class="contact-phone"><a href="tel:+79211234567" class="contact-phone__link">+7 921 123 45 67</a></div>
+          <div class="contact-email"><a href="mailto:contact@nordic-c.ru" class="contact-email__link">contact@nordic-c.ru</a></div>
+        </div>
+      </div>
+      <div class="page-navigation">
+        <div class="logo">
+          <a href="/index.html">
+            <figure>
+              <source srcset="/img/main-logo@1x.png 1x, /img/main-logo@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+              <img class="logo__main" src="/img/main-logo@1x.png" alt="Nordic" width="155" height="47">
+            </figure>
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a onclick="SubMenu()" class="item-link" href="#">Вид кейтеринга</a>
+            </li>
+            <li class="navigation__list-item">
+              <a onclick="SubMenuWeb()" class="item-link" href="#">События</a>
+            </li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Площадки</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Услуги</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">О компании</a></li>
+          </ul>
+
+          <div class="sub-items">
+            <ul id="subWeb" class="list">
+              <li class="list__navigation-item"><a class="list__navigation-link" href="#">Фуршет</a></li>
+              <li class="list__navigation-item"><a class="list__navigation-link" href="#">Fine Dining</a></li>
+              <li class="list__navigation-item"><a class="list__navigation-link" href="#">Тематические станции</a></li>
+              <li class="list__navigation-item"><a class="list__navigation-link" href="#">Grill Yakitori</a></li>
+            </ul>
+
+            <ul id="events" class="list list-events">
+              <li class="list__navigation-item"><a class="list__navigation-link" href="#">Кейтеринг на&nbsp;тсвадьбу</a></li>
+              <li class="list__navigation-item"><a class="list__navigation-link" href="#">Обслуживание на&nbsp;теплоходе</a></li>
+            </ul>
+          </div>
+
+          <div class="mobile">
+            <a id="mobile-btn" href="javascript:void(0);" class="mobile__btn" onclick="Menu()">
+              <span></span>
+              <span></span>
+            </a>
+            <ul id="menu" class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" onclick="SubMenu()" href="#">Вид кейтеринга</a>
+                <ul id="menu__sublist">
+                  <li><a class="menu__sublist-link" href="#">Фуршет</a></li>
+                  <li><a class="menu__sublist-link" href="#">Fine Dining</a></li>
+                  <li><a class="menu__sublist-link" href="#">Тематические станции</a></li>
+                  <li><a class="menu__sublist-link" href="#">Grill Yakitori</a></li>
+                </ul>
+              </li>
+              <li class="menu__list-item"><a class="list__navigation-link" href="#">События</a></li>
+              <li class="menu__list-item"><a class="list__navigation-link" href="#">Площадки</a></li>
+              <li class="menu__list-item"><a class="list__navigation-link" href="#">Услуги</a></li>
+              <li class="menu__list-item"><a class="list__navigation-link" href="#">О компании</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div id="pad" class="catering">
+        <div class="catering__container">
+          <div class="catering__description">Добро пожаловать</div>
+          <div class="catering__title">Безупречный кейтеринг на Вашем мероприятии</div>
+          <div class="catering__description-bottom">От грандиозных свадеб до камерных Дней Рождений - мы обеспечим первоклассное обслуживание и неповторимую кухню от ресторана Nordic.</div>
+        </div>
+        <div class="catering__container catering__container--btn">
+          <figure>
+            <source srcset="./img/top50@1x.png 1x, ./img/top50@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+            <img class="catering__img" src="/img/top50@2x.png" alt="top50" width="243" height="58">
+          </figure>
+          <button class="btn catering__btn">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="about">
+        <div class="about__name">О нас</div>
+        <div class="about__wrapper">
+          <h1 class="title about__title">Мы поможем сделать ваше мероприятие особенным, чтобы ваши гости запомнили праздник&nbsp;надолго.</h1>
+          <div class="about__description">
+            <p class="description-text">Nordic за 5&nbsp;лет стал брендом, который заключает в&nbsp;себе высокое&nbsp;качество предоставляемых услуг и&nbsp;неповторимую кухню. С&nbsp;недавнего времени мы&nbsp;сотрудничаем со скандинавскими шеф-поварами, которые вдохновляют этот&nbsp;проект новыми идеями.</p>
+            <p class="description-text">Наша команда опытных профессионалов во главе с&nbsp;идеологом проекта Надеждой Третьяковой и шеф-поваром Игорем Васильевым создадут для вас уникальное меню, оригинальные коктейли, стильное накрытие, предложат и&nbsp;разработают нестандартный фуршет.</p>
+          </div>
+          <button class="btn about__btn">Подробнее о компании</button>
+        </div>
+      </div>
+      <ul class="benefit">
+        <li class="benefit__card">
+          <div class="benefit__value">200 <span>+</span></div>
+          <div class="benefit__description">довольных заказчиков в&nbsp;год</div>
+        </li>
+        <li class="benefit__card">
+          <div class="benefit__value">5 <span>+</span></div>
+          <div class="benefit__description">лет в ресторанной индустрии</div>
+        </li>
+        <li class="benefit__card">
+          <div class="benefit__value">100 <span>+</span></div>
+          <div class="benefit__description">разных стилей меню под тематику вашего мероприятия</div>
+        </li>
+        <li class="benefit__card">
+          <div class="benefit__value">1000 <span>+</span></div>
+          <div class="benefit__description">вариантов необычной посуды и&nbsp;подачи блюд</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="service">
+      <div class="container">
+          <div class="service__container">
+            <div class="service__name">Виды кейтеринга</div>
+            <div class="service__wrapper">
+              <div class="title service__title">Широкий спектр услуг выездного кейтеринга&nbsp;на&nbsp;разные&nbsp;виды мероприятий</div>
+              <div class="service__description">Мы выезжаем на площадки в разных форматах. Это может быть фуршет в нордическом стиле или банкет в стиле Марии Антуанетты, мы сервируем разработанный под вас гастрономический сет с 10 переменами блюд, или готовим на природе блюда на гриле. Кроме того, мы делаем тематические станции - коктейльный бар, Candy bar, Smorrebrod station и т.д.</div>
+            </div>
+          </div>
+          <div class="service__slider">
+            <div class="sw1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-container">
+                    <p class="service__product">Напитки</p>
+                    <p class="service__prise">от 4000 руб/чел</p>
+                    <p class="service__text">Организация выездного фуршета. Мы поможем вам организовать выездной фуршет в любом удобном для вас месте. Оцените по достоинству мастерство наших поваров. Продемонстрируйте гостям свой хороший вкус и утонченные манеры.</p>
+                  </div>
+                  <figure>
+                    <source srcset="./img/service@1x.jpg 1x, ./img/service@2x.jpg 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                    <img class="product__img" src="/img/service@1x.jpg" width="700" height="496" alt="Напитки">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-container">
+                    <p class="service__product">Закуски</p>
+                    <p class="service__prise">от 5000 руб/чел</p>
+                    <p class="service__text">Организация выездного фуршета. Мы поможем вам организовать выездной фуршет в любом удобном для вас месте. Оцените по достоинству мастерство наших поваров. Продемонстрируйте гостям свой хороший вкус и утонченные манеры.</p>
+                  </div>
+                  <figure>
+                    <source srcset="./img/dining@1x.jpg 1x, ./img/dining@2x.jpg 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                    <img class="product__img" src="/img/dining@1x.jpg" width="700" height="496" alt="Напитки">
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-container">
+                    <p class="service__product">Ужин</p>
+                    <p class="service__prise">от 6000 руб/чел</p>
+                    <p class="service__text">Организация выездного фуршета. Мы поможем вам организовать выездной фуршет в любом удобном для вас месте. Оцените по достоинству мастерство наших поваров. Продемонстрируйте гостям свой хороший вкус и утонченные манеры.</p>
+                  </div>
+                  <figure>
+                    <source srcset="./img/dining2@1x.jpg 1x, ./img/dining2@2x.jpg 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                    <img class="product__img" src="/img/dining2@1x.jpg" width="700" height="496" alt="Напитки">
+                  </figure>
+                </div>
+              </div>
+              <div class="service__nav">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div> 
+            </div>
+          </div>
+          <div class="service__quote">
+            <figure>
+              <source srcset="./img/human@1x.jpg 1x, ./img/human@2x.jpg 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+              <img class="service__quote" src="/img/human@1x.jpg" width="480" height="620" alt="Повар">
+            </figure>
+            <div class="quote">
+              <div class="quote__svg">
+                <svg viewBox="0 0 32 32" width="32" height="32"><use xlink:href="#quote"></use></svg>
+              </div>
+              <p class="quote__text" >Мы почувствовали, что должны снова бросить себе вызов: ресторан Nordic завоевал признание многих гостей, а значит настало время удивлять их чаще, выезжая с кейтерингом на разные мероприятия, наша кухня - это настоящая феерия вкусов, праздник для всех любителей гастрономических приключений</p>
+              <div class="quote__chef">
+                <p class="chef-person">Шеф-повар ресторана</p>
+                <p class="chef-name">Игорь Васильев</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <a href="#" class="video__button">
+        <svg width="18" height="18"><use xlink:href="#play"></use></svg>
+      </a>
+      <figure>
+        <source srcset="./img/video@1x.jpg 1x, ./img/video@2x.jpg 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+        <img class="video__img" src="/img/video@1x.jpg" alt="video" width="100%" height="720">
+      </figure>
+    </div>
+
+    <div class="container">
+      <div class="weare">
+        <div class="weare__name">Почему мы</div>
+        <div class="weare__wrapper">
+          <h2 class="title weare__title">Мы считаем, что каждое событие особенное и заслуживает стильного празднования.</h2>
+          <div class="weare__conditions">
+            <div class="weare__conditions-item">
+              <picture>
+                <source srcset="./img/conditions1@1x.png 1x, ./img/conditions1@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img class="weare__img" src="/img/conditions1@1x.jpg" alt="video" width="80" height="80">
+              </picture>
+              <div class="weare__text">Nordic имеет команду опытных профессионалов в сфере общественного питания, которые занимаются поставкой высококачественной еды и исключительного обслуживания.</div>
+            </div>
+            <div class="weare__conditions-item">
+              <picture>
+                <source srcset="./img/conditions2@1x.png 1x, ./img/conditions2@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img class="weare__img" src="/img/conditions2@1x.jpg" alt="video" width="80" height="80">
+              </picture>
+              <div class="weare__text">Nordic предлагает множество вариантов меню, которые можно настроить в соответствии с вашими конкретными потребностями и предпочтениями.</div>
+            </div>
+            <div class="weare__conditions-item">
+              <picture>
+                <source srcset="./img/conditions3@1x.png 1x, ./img/conditions3@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img class="weare__img" src="/img/conditions3@1x.jpg" alt="video" width="80" height="80">
+              </picture>
+              <div class="weare__text">NNordic помогает снять стресс при планировании мероприятий, предлагая комплексное решение для всех ваших потребностей в сфере кейтеринга, включая планирование мероприятий и выбор места проведения.</div>
+            </div>
+            <div class="weare__conditions-item">
+              <picture>
+                <source srcset="./img/conditions4@1x.png 1x, ./img/conditions4@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img class="weare__img" src="/img/conditions4@1x.jpg" alt="video" width="80" height="80">
+              </picture>
+              <div class="weare__text">Nordic использует только самые свежие ингредиенты и готовит всю еду на месте, чтобы обеспечить максимальный вкус и качество.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="customers-bg">
+      <div class="container customers">
+        <div class="customers__name">Клиенты</div>
+        <div class="customers__wrapper">
+          <h2 class="title customers__title">Наши клиенты - это большие и маленькие компании, частные мероприятия дома и крупные для&nbsp;селебрити.</h2>
+          <ul class="customers__list">
+            <li class="customers__item">
+              <picture>
+                <source srcset="./img/brand/b1@1x.png 1x, ./img/brand/b1@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img src="/img/brand/b1@1x.png" width="180" height="45" alt="Mersedes-Benz">
+              </picture>
+            </li>
+            <li class="customers__item">
+              <picture>
+                <source srcset="./img/brand/b2@1x.png 1x, ./img/brand/b2@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img src="/img/brand/b2@2x.png" width="226" height="56" alt="Range Rover">
+              </picture>
+            </li>
+            <li class="customers__item">
+              <picture>
+                <source srcset="./img/brand/b3@1x.png 1x, ./img/brand/b3@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img src="/img/brand/b3@2x.png" width="161" height="35" alt="Полисан">
+              </picture>
+            </li>
+            <li class="customers__item">
+              <picture>
+                <source srcset="./img/brand/b4@1x.png 1x, ./img/brand/b4@2x.png 2x" sizes="min-width: 768px) 700px, (min-width: 1024px) 600px">
+                <img src="/img/brand/b4@2x.png" width="116" height="61" alt="Гаспром">
+              </picture>
+            </li>
+          </ul>
+          <p class="customers__text">В этом разделе мы представляем наши лучшие работы и успешные мероприятия, которые мы организовали для наших клиентов. Здесь вы можете увидеть фотографии и видео отчеты о наших последних мероприятиях, таких как свадьбы, корпоративные вечеринки, детские дни рождения и т.д. Это дает вам возможность увидеть нашу работу в действии и убедиться в качестве наших услуг.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper sw2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide ubi">
+          <div class="ubi__container">
+            <div class="ubi__img">
+              <img src="/img/ubi.jpg" width="580" height="360" alt="Юбилей в стиле маленькой Италии">
+            </div>
+            <div class="ubi__data">Июль 2021 г.</div>
+            <p class="ubi__text">Юбилей в стиле маленькой Италии</p>
+            <p class="ubi__description">Банкет на 40 человек</p>
+          </div>
+        </div>
+        <div class="swiper-slide ubi">
+          <div class="ubi__container-center">
+            <div class="ubi__img">
+              <img class="img-web" src="/img/ubi2.jpg" width="480" height="550" alt="Юбилей Салона Ирины Андерсона">
+              <img class="img-mobile" src="/img/ubi2-1.png" width="300" height="190" alt="Корпоративное кафе Dukat Club">
+            </div>
+            <div class="ubi__data">Февраль 2022 г.</div>
+            <p class="ubi__text">Юбилей Салона Ирины Андерсона</p>
+            <p class="ubi__description">Фуршет на 30 человек</p>
+          </div>
+        </div>
+        <div class="swiper-slide ubi">
+          <div class="ubi__container">
+            <div class="ubi__img">
+              <img src="/img/ubi3.jpg" width="580" height="360" alt="Юбилей в стиле Марии Антуанетты">
+
+            </div>
+            <div class="ubi__data">Январь 2022 г.</div>
+            <p class="ubi__text">Юбилей в стиле Марии Антуанетты</p>
+            <p class="ubi__description">Гастрономический ужин / Candy Bar</p>
+          </div>
+        </div>
+        <div class="swiper-slide ubi">
+          <div class="ubi__container">
+            <div class="ubi__img">
+              <img src="/img/ubi.jpg" width="580" height="360" alt="Юбилей в стиле маленькой Италии">
+            </div>
+            <div class="ubi__data">Июль 2021 г.</div>
+            <p class="ubi__text">Юбилей в стиле маленькой Италии</p>
+            <p class="ubi__description">Банкет на 40 человек</p>
+          </div>
+        </div>
+        <div class="swiper-slide ubi">
+          <div class="ubi__container-center">
+            <div class="ubi__img">
+              <img class="img-web" src="/img/ubi2.jpg" width="480" height="550" alt="Юбилей Салона Ирины Андерсона">
+              <img class="img-mobile" src="/img/ubi2-1.png" width="300" height="190" alt="Корпоративное кафе Dukat Club">
+            </div>
+            <div class="ubi__data">Февраль 2022 г.</div>
+            <p class="ubi__text">Юбилей Салона Ирины Андерсона</p>
+            <p class="ubi__description">Фуршет на 30 человек</p>
+          </div>
+        </div>
+        <div class="swiper-slide ubi">
+          <div class="ubi__container">
+            <div class="ubi__img">
+              <img src="/img/ubi3.jpg" width="580" height="360" alt="Юбилей в стиле Марии Антуанетты">
+            </div>
+            <div class="ubi__data">Январь 2022 г.</div>
+            <p class="ubi__text">Юбилей в стиле Марии Антуанетты</p>
+            <p class="ubi__description">Гастрономический ужин / Candy Bar</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+    <div class="forbes-bg">
+      <div class="container forbes">
+        <div class="forbes__name">СМИ о нас</div>
+        <div class="forbes__wrapper">
+          <div class="sw3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="forbes__text">
+                  <img src="/img/quote@2x.png" width="60" height="60" alt="quote"> 
+                  <p class="forbes__text">Ресторан Nordic подготовил дегустационный сет, в котором вкус новой северной кухни обогащен нюансами гастрономических традиций Азии, Африки и Америки....</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="forbes__text">
+                  <img src="/img/quote@2x.png" width="60" height="60" alt="quote"> 
+                  <p class="forbes__text">Ресторан Nordic подготовил дегустационный сет, в котором вкус новой северной кухни обогащен нюансами гастрономических традиций Азии, Африки и Америки....</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="forbes__text">
+                  <img src="/img/quote@2x.png" width="60" height="60" alt="quote"> 
+                  <p class="forbes__text">Ресторан Nordic подготовил дегустационный сет, в котором вкус новой северной кухни обогащен нюансами гастрономических традиций Азии, Африки и Америки....</p>
+                </div>
+              </div>
+            </div>
+            <div class="forbes__nav">
+              <div class="sw3-button-prev">
+                <svg viewBox="0 0 68 68" width="68" height="68"><use xlink:href="#arrow"></use></svg>
+              </div>
+              <div class="sw3-button-next">
+                <svg viewBox="0 0 68 68" width="68" height="68"><use xlink:href="#arrow"></use></svg>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+        <!-- <div class="tab__mobile"><p>Шаг <span class="step"></span> из 2</p></div> -->
+      <div class="tab">
+        <button id="defaultOpen" class="tab__btn" onclick="openTab(event, 'event')">
+          <svg class="tab__elem" width="45" height="45"><use xlink:href="#tab1"></use></svg>
+          <span>Мероприятие</span> 
+        </button>
+        <button class="tab__btn" onclick="openTab(event, 'contact')">
+          <svg class="tab__elem" width="48" height="48"><use xlink:href="#tab2"></use></svg>
+          <span>Контакты</span> 
+        </button>
+      </div>
+      <div id="event" class="tabcontent">
+        <form action="" class="event">
+          <div class="event__container">
+            <h3 class="event__title">Расскажите о мероприятии</h3>
+            <p class="event__description">Выберите формат мероприятия:</p>
+            <div class="event__row">
+              <button id="b1" class="event__row-btn">Фуршет</button>
+              <button id="b2" class="event__row-btn">Гастрономический ужин</button>
+              <button id="b3" class="event__row-btn">Банкет</button>
+            </div>
+            <div class="range">
+              <label class="range__title-mobile">Количество гостей:</label>
+              <div class="range__container">
+                <label class="range__title">Количество гостей:</label>
+                <span class="range__value">30 <span class="range__mark">человек</span></span>
+              </div>
+              <input class="range__line" value="30" min="30" max="100" type="range" >
+              <p class="range__description">
+                <span>от 10 человек</span>
+                <span>до 100 человек</span>
+              </p>
+            </div>
+            <div class="data">
+              <p class="data__title-modile">Дата мероприятия:</p>
+              <div class="data__container">
+                <p class="data__title">Дата мероприятия:</p>
+                <label for="calendar" class="data__month">
+                  <input name="calendar" class="data__month-input" type="month">
+                  <svg class="data__month-icon" viewBox="0 0 20 20" width="20" height="20"><use xlink:href="#calendary"></use></svg>
+                </label>
+              </div>
+            </div>
+            <div class="options">
+              <div class="options__title-modile">Дополнительные услуги:</div>
+              <div class="options__container">
+                <div class="options__title">Дополнительные услуги:</div>
+                <div class="options__select">
+                  <select>
+                    <option value="0">Оформление</option>
+                    <option value="1">Подбор площадки</option>
+                    <option value="2">Составление тайминга</option>
+                    <option value="3">Полное сопровождение от ведущего до декора</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="wishes">
+              <div class="wishes__container-mobile">
+                <div class="wishes-modile">Пожелания по меню:</div>
+                <textarea cols="1" rows="1" placeholder="Укажите пожелания"></textarea>
+              </div>
+              <div class="wishes__container">
+                <textarea cols="1" rows="1" placeholder="Напишите пожелания по меню"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="event__prise">
+            <div class="event__main-prise">
+              <span class="event__prise-title">Примерная стоимость:</span>
+              <div class="event__prise__container">
+                <p class="event__prise-coin">150 000 ₽</p>
+                <span class="event__prise-customer">5 000 ₽/чел</span>
+              </div>
+            </div>
+            <div class="event__status">
+              <ul class="status__list">
+                <li class="status__list-item">
+                  <span class="status__form">Формат:</span>
+                  <span class="status__quantity">Фуршет</span>
+                </li>
+                <li class="status__list-item">
+                  <span class="status__form">Количество гостей:</span>
+                  <span class="status__quantity">30</span>
+                </li>
+                <li class="status__list-item">
+                  <span class="status__form">Дата:</span>
+                  <span class="status__quantity">20.04.23</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="form__footer">
+            <button class="form__btn">Продолжить</button>
+            <p class="form__doc">Нажимая кнопку вы соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">политикой конфиденциальности</a></p>
+          </div>
+        </form>
+      </div>
+      <div id="contact" class="tabcontent">
+        <form action="" class="contact">
+          <div class="contact__container">
+            <h3 class="contact__title">Расскажите о себе</h3>
+            <input class="contact__input" type="text" oninput="if(/[^a-zA-Zа-яА-ЯёЁ .]/i.test(this.value)){this.value='';}" placeholder="Ваше имя">
+            <input class="contact__input contact__phone" type="text" required placeholder="Мобильный телефон">
+            <input class="contact__input" type="mail" placeholder="Электронная почта">
+          </div>
+          <div class="event__prise">
+            <div class="event__main-prise">
+              <span class="event__prise-title">Примерная стоимость:</span>
+              <div class="event__prise__container">
+                <p class="event__prise-coin">180 000 ₽</p>
+                <span class="event__prise-customer">5 000 ₽/чел</span>
+              </div>
+            </div>
+            <div class="event__status">
+              <ul class="status__list">
+                <li class="status__list-item">
+                  <span class="status__form">Формат:</span>
+                  <span class="status__quantity">Фуршет</span>
+                </li>
+                <li class="status__list-item">
+                  <span class="status__form">Количество гостей:</span>
+                  <span class="status__quantity">200</span>
+                </li>
+                <li class="status__list-item">
+                  <span class="status__form">Дата:</span>
+                  <span class="status__quantity">20.04.23</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form__footer form__footer-contact">
+            <button class="form__btn">Отправить заявку</button>
+            <p class="form__doc">Нажимая кнопку вы соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">политикой конфиденциальности</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="copyright-bg">
+      <div class="copyright container">
+        <div class="copyright__info">
+          <p class="copyright__text">© 2023 Нордик кейтеринг</p>
+          <div class="copyright__mobile">
+            <p class="copyright__text">+7 911 926 44 07</p>
+            <p class="copyright__text">restaurant@nordic-spb.ru</p>
+          </div>
+          <div class="copyright__socials">
+            <a href="#"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#vk"></use></svg></a>
+            <a href="#"><svg viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#fb"></use></svg></a>
+            <a href="#"><svg viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#twitter"></use></svg></a>
+            <a href="#"><svg viewBox="0 0 16 16" width="16" height="16"><use xlink:href="#inst"></use></svg></a>
+          </div>
+        </div>
+     </div>
+    </div>
+  </footer>
+
+
+
+  <svg style="display: none;">
+    <symbol id="calendary" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" >
+      <g opacity="0.4">
+        <path d="M16.25 2.5H14.375V1.875C14.375 1.70924 14.3092 1.55027 14.1919 1.43306C14.0747 1.31585 13.9158 1.25 13.75 1.25C13.5842 1.25 13.4253 1.31585 13.3081 1.43306C13.1908 1.55027 13.125 1.70924 13.125 1.875V2.5H6.875V1.875C6.875 1.70924 6.80915 1.55027 6.69194 1.43306C6.57473 1.31585 6.41576 1.25 6.25 1.25C6.08424 1.25 5.92527 1.31585 5.80806 1.43306C5.69085 1.55027 5.625 1.70924 5.625 1.875V2.5H3.75C3.41848 2.5 3.10054 2.6317 2.86612 2.86612C2.6317 3.10054 2.5 3.41848 2.5 3.75V16.25C2.5 16.5815 2.6317 16.8995 2.86612 17.1339C3.10054 17.3683 3.41848 17.5 3.75 17.5H16.25C16.5815 17.5 16.8995 17.3683 17.1339 17.1339C17.3683 16.8995 17.5 16.5815 17.5 16.25V3.75C17.5 3.41848 17.3683 3.10054 17.1339 2.86612C16.8995 2.6317 16.5815 2.5 16.25 2.5ZM16.25 6.25H3.75V3.75H5.625V4.375C5.625 4.54076 5.69085 4.69973 5.80806 4.81694C5.92527 4.93415 6.08424 5 6.25 5C6.41576 5 6.57473 4.93415 6.69194 4.81694C6.80915 4.69973 6.875 4.54076 6.875 4.375V3.75H13.125V4.375C13.125 4.54076 13.1908 4.69973 13.3081 4.81694C13.4253 4.93415 13.5842 5 13.75 5C13.9158 5 14.0747 4.93415 14.1919 4.81694C14.3092 4.69973 14.375 4.54076 14.375 4.375V3.75H16.25V6.25Z" fill="#545E76"/>
+      </g>
+    </symbol>
+    <symbol id="play" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.4375 8.99984C16.4379 9.18022 16.3917 9.35764 16.3033 9.51485C16.2148 9.67206 16.0872 9.80371 15.9328 9.89699L6.365 15.75C6.20369 15.8488 6.01894 15.9027 5.82982 15.9062C5.6407 15.9097 5.45408 15.8627 5.28922 15.77C5.12593 15.6787 4.98991 15.5455 4.89514 15.3842C4.80037 15.2229 4.75027 15.0393 4.75 14.8522V3.14746C4.75027 2.96038 4.80037 2.77676 4.89514 2.61546C4.98991 2.45417 5.12593 2.32102 5.28922 2.22973C5.45408 2.13699 5.6407 2.08994 5.82982 2.09344C6.01894 2.09695 6.20369 2.15087 6.365 2.24965L15.9328 8.10269C16.0872 8.19598 16.2148 8.32763 16.3033 8.48483C16.3917 8.64204 16.4379 8.81947 16.4375 8.99984Z" fill="#222733"/>
+    </symbol>
+    <symbol id="quote" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <g><path d="M7.45325 10.4848C9.62225 10.4848 11.3878 12.2488 11.3878 14.4193C11.3878 16.5898 9.62375 18.3538 7.45325 18.3538C5.28425 18.3538 3.51875 16.5898 3.51875 14.4193L3.5 13.868C3.5 9.51127 7.03025 5.99902 11.369 5.99902V8.24152C9.8615 8.24152 8.46425 8.82952 7.39775 9.89527C7.1945 10.0985 7.01225 10.2995 6.82775 10.5388C7.031 10.502 7.25075 10.4848 7.45325 10.4848ZM17.5655 10.4848C19.7345 10.4848 21.5 12.2488 21.5 14.4193C21.5 16.5898 19.736 18.3538 17.5655 18.3538C15.3965 18.3538 13.631 16.5898 13.631 14.4193L13.6122 13.868C13.6122 9.51127 17.1425 5.99902 21.4813 5.99902V8.24152C19.9925 8.24152 18.5765 8.82952 17.51 9.89527C17.3068 10.0985 17.1245 10.2995 16.9587 10.5388C17.162 10.502 17.363 10.484 17.5662 10.484L17.5655 10.4833V10.4848Z" fill="#545E76"/></g>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="34" cy="34" r="34" transform="rotate(180 34 34)" fill="#E5E8EF" fill-opacity="0.3"/>
+      <path d="M24.75 34L41.2492 34" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+      <path d="M34.9996 25.7504L43.2492 34L34.9996 42.2496" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="tab1" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <rect width="45" height="45" rx="22.5" fill="#222733"/>
+      <path d="M23.73 14H25.49V31H23.21V17.525L20.63 19.775L19.51 17.825L23.73 14Z" fill="white"/>
+    </symbol>
+    <symbol id="tab2" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="24" fill="#545E76" fill-opacity="0.12"/>
+      <path opacity="0.5" d="M24.22 26.16L23.78 26.42C23.38 26.66 22.9333 26.9467 22.44 27.28C21.72 27.8 21.2867 28.4067 21.14 29.1H28.76V31H18.8V30.12C18.8 29.1733 18.98 28.38 19.34 27.74C19.6867 27.1 20.1267 26.5667 20.66 26.14C21.2067 25.7 21.9333 25.2 22.84 24.64L23.82 24.08C24.46 23.7067 24.9533 23.4 25.3 23.16C26.1 22.5867 26.5 21.8867 26.5 21.06C26.5 20.4333 26.2867 19.94 25.86 19.58C25.4333 19.2067 24.88 19.02 24.2 19.02C23.52 19.02 22.9 19.2 22.34 19.56C21.7933 19.92 21.1733 20.5333 20.48 21.4L18.82 20.2C19.5533 19.1467 20.3467 18.3667 21.2 17.86C22.0533 17.34 23.0333 17.08 24.14 17.08C25.5533 17.08 26.68 17.46 27.52 18.22C28.36 18.9667 28.78 19.9 28.78 21.02C28.78 21.8067 28.62 22.4733 28.3 23.02C28.0067 23.54 27.6133 23.9867 27.12 24.36C26.6533 24.7067 25.9867 25.1333 25.12 25.64C24.9867 25.7067 24.6867 25.88 24.22 26.16Z" fill="#222733"/>
+    </symbol>
+    <symbol id="vk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.3"><path d="M19.6933 13.8103C20.4013 14.5743 21.1479 15.2917 21.7826 16.1317C22.0626 16.505 22.3293 16.8903 22.5319 17.3237C22.8199 17.9397 22.5586 18.617 22.0586 18.6543L18.9519 18.6517C18.1493 18.7263 17.5106 18.369 16.9719 17.7637C16.5426 17.2797 16.1439 16.7637 15.7293 16.265C15.5669 16.0586 15.3787 15.874 15.1693 15.7157C14.7466 15.4117 14.3786 15.5037 14.1359 15.993C13.8879 16.4903 13.8319 17.041 13.8079 17.5943C13.7746 18.4023 13.5546 18.6157 12.8186 18.6517C11.2479 18.7343 9.75727 18.4717 8.37194 17.5957C7.1506 16.825 6.20394 15.7357 5.3786 14.5023C3.7746 12.101 2.5466 9.46234 1.44127 6.74901C1.19194 6.13834 1.37327 5.81034 1.98527 5.79967C2.99893 5.77812 4.01291 5.77723 5.0266 5.79701C5.4386 5.80367 5.7106 6.06367 5.8706 6.49434C6.4186 7.98367 7.08927 9.40101 7.93194 10.7157C8.15727 11.065 8.38527 11.4143 8.71194 11.661C9.07194 11.933 9.34661 11.8423 9.51594 11.3997C9.62261 11.1183 9.67061 10.8157 9.6946 10.5143C9.7746 9.47834 9.78527 8.44367 9.64527 7.41167C9.55861 6.76767 9.22927 6.35034 8.64794 6.22901C8.35061 6.16634 8.39461 6.04367 8.5386 5.85701C8.78927 5.53434 9.02394 5.33301 9.49327 5.33301H13.0053C13.5586 5.45301 13.6813 5.72767 13.7573 6.34234L13.7599 10.6517C13.7533 10.889 13.8666 11.5957 14.2559 11.753C14.5653 11.865 14.7706 11.5903 14.9573 11.373C15.7973 10.3863 16.3973 9.22234 16.9346 8.01567C17.1719 7.48501 17.3773 6.93567 17.5746 6.38367C17.7213 5.97567 17.9519 5.77434 18.3693 5.78367L21.7493 5.78767C21.8493 5.78767 21.9506 5.78767 22.0479 5.80634C22.6186 5.91301 22.7746 6.18501 22.5986 6.79967C22.3213 7.76367 21.7813 8.56634 21.2546 9.37301C20.6906 10.2343 20.0879 11.0663 19.5279 11.933C19.0146 12.725 19.0559 13.1237 19.6933 13.8103Z" fill="#2C323A"/></g>
+    </symbol>
+    <symbol id="fb" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.3"><path d="M12.6088 0H10.3075C7.5125 0 5.7075 1.59074 5.7075 4.05342V5.62817H3.39125C3.175 5.62817 3 5.77902 3 5.96529V8.67367C3 8.85994 3.175 9.00964 3.39125 9.00964H5.7075V15.664C5.7075 15.8492 5.8825 16 6.0975 16H9.36C9.5775 16 9.7525 15.8492 9.7525 15.664V9.0085H12.6075C12.8238 9.0085 12.9987 8.8588 12.9987 8.67252L13 5.96529C12.9995 5.92078 12.989 5.87684 12.9692 5.83616C12.9494 5.79548 12.9208 5.75893 12.885 5.72873C12.8101 5.66472 12.7113 5.62918 12.6088 5.62931H9.7525V4.33798C9.7525 3.57689 9.96375 3.19063 11.1187 3.19063L12.6088 3.18606C12.8238 3.18606 12.9987 3.03635 12.9987 2.85008V0.335976C13 0.150846 12.825 0 12.6088 0Z" fill="#111112"/></g>
+    </symbol>
+    <symbol id="twitter" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.3"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.88506 14.9989C11.1321 14.9989 14.5491 9.82288 14.5491 5.33488C14.5491 5.18788 14.5491 5.04087 14.5391 4.89587C15.0841 4.50187 15.5681 4.02988 15.9761 3.49787C16.0091 3.45187 16.0081 3.38987 15.9731 3.34487C15.9391 3.29988 15.8801 3.28288 15.8271 3.30288C15.3291 3.48488 14.8111 3.60987 14.2831 3.67188C14.9141 3.29488 15.4031 2.72388 15.6821 2.04988C15.6971 2.01088 15.6851 1.96688 15.6541 1.93988C15.6231 1.91287 15.5781 1.90788 15.5411 1.92788C14.9391 2.25188 14.2911 2.48487 13.6201 2.61787C12.9771 1.93487 12.0801 1.54688 11.1431 1.54688C9.27806 1.54688 7.74306 3.08188 7.74306 4.94688C7.74306 5.20588 7.77306 5.46388 7.83106 5.71588C5.17206 5.58188 2.68706 4.35387 0.967059 2.32987C0.936059 2.29287 0.888059 2.27387 0.840059 2.27887C0.792059 2.28387 0.749059 2.31288 0.727059 2.35588C-0.0259413 3.87087 0.458059 5.74988 1.88206 6.70087C1.49506 6.68887 0.872059 6.49787 0.549059 6.39087C0.502059 6.37488 0.451059 6.38387 0.412059 6.41388C0.372059 6.44388 0.351059 6.49188 0.354059 6.54087C0.434059 7.21987 0.846059 9.24487 3.06606 9.64787C2.63106 9.76688 2.17806 9.79788 1.73306 9.73888C1.69006 9.73288 1.64706 9.74988 1.62006 9.78288C1.59306 9.81688 1.58606 9.86187 1.60106 9.90187C2.09906 11.1759 3.32506 12.0399 4.70506 12.0659C3.91006 12.6899 2.99106 13.1269 2.01806 13.3499C1.70006 13.4229 0.945059 13.4659 0.371059 13.4799C0.286059 13.4769 0.210059 13.5339 0.187059 13.6159C0.165059 13.6989 0.201059 13.7859 0.276059 13.8279C1.68706 14.5949 3.27106 14.9989 4.88506 14.9969" fill="#111112"/></g>
+    </symbol>
+    <symbol id="inst" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.3"><g clip-path="url(#clip0_3468_524)"><path d="M4.57143 0H11.4286C12.641 0 13.8038 0.481631 14.6611 1.33894C15.5184 2.19625 16 3.35901 16 4.57143V11.4286C16 12.641 15.5184 13.8038 14.6611 14.6611C13.8038 15.5184 12.641 16 11.4286 16H4.57143C3.35901 16 2.19625 15.5184 1.33894 14.6611C0.481631 13.8038 0 12.641 0 11.4286V4.57143C0 3.35901 0.481631 2.19625 1.33894 1.33894C2.19625 0.481631 3.35901 0 4.57143 0ZM8 11.4286C8.90931 11.4286 9.78139 11.0673 10.4244 10.4244C11.0673 9.78139 11.4286 8.90931 11.4286 8C11.4286 7.09069 11.0673 6.21862 10.4244 5.57563C9.78139 4.93265 8.90931 4.57143 8 4.57143C7.09069 4.57143 6.21862 4.93265 5.57563 5.57563C4.93265 6.21862 4.57143 7.09069 4.57143 8C4.57143 8.90931 4.93265 9.78139 5.57563 10.4244C6.21862 11.0673 7.09069 11.4286 8 11.4286ZM11.936 5.07886C12.0722 5.08343 12.208 5.06055 12.3351 5.01157C12.4623 4.9626 12.5784 4.88854 12.6763 4.7938C12.7743 4.69905 12.8522 4.58557 12.9054 4.46009C12.9586 4.33462 12.9861 4.19972 12.9861 4.06343C12.9861 3.92714 12.9586 3.79224 12.9054 3.66677C12.8522 3.54129 12.7743 3.4278 12.6763 3.33306C12.5784 3.23832 12.4623 3.16426 12.3351 3.11528C12.208 3.06631 12.0722 3.04343 11.936 3.048C11.6726 3.05684 11.4229 3.16769 11.2397 3.35716C11.0565 3.54662 10.9541 3.79987 10.9541 4.06343C10.9541 4.32699 11.0565 4.58024 11.2397 4.7697C11.4229 4.95917 11.6726 5.07002 11.936 5.07886Z" fill="#111112"/></g></g>
+      <defs><clipPath id="clip0_3468_524"><rect width="16" height="16" fill="white"/></clipPath></defs>
+    </symbol>
+  </svg>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="/js/slider.js"></script>
+  <script src="/js/tabs.js"></script>
+  <script src="/js/options.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/steps.js"></script>
+</body>
+</html>
