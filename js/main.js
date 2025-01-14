@@ -1,0 +1,5 @@
+import './menu.js'
+import './options.js'
+import './slider.js'
+import './steps.js'
+import './tabs.js'
