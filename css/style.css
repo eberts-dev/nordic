@@ -2,7 +2,7 @@
 @import 'root.css';
 
 header {
-	background: url('/img/header-bg.png') top no-repeat;
+	background: url('../img/header-bg.png') top no-repeat;
 	background-size: cover;
 	padding: 0 20px;
 }
@@ -244,7 +244,7 @@ main {
 }
 
 .service {
-	background: url('/img/caitering@2x.jpg') no-repeat;
+	background: url('../img/caitering@2x.jpg') no-repeat;
 	background-size: cover;
 }
 
@@ -407,7 +407,7 @@ main {
 	position: absolute;
 	left: 60px;
 	bottom: 60px;
-	background: url('/img/sound@2x.png') no-repeat;
+	background: url('../img/sound@2x.png') no-repeat;
 	background-size: cover;
 	width: 100px;
 	height: 100px;
@@ -551,7 +551,7 @@ main {
 }
 
 .forbes-bg {
-	background: url('/img/forbes@1x.jpg') no-repeat;
+	background: url('../img/forbes@1x.jpg') no-repeat;
 	background-size: cover;
 }
 
@@ -589,7 +589,7 @@ main {
 
 .forbes__text::after {
 	content: '';
-	background: url('/img/forbes@2x.png') no-repeat;
+	background: url('../img/forbes@2x.png') no-repeat;
 	background-size: cover;
 	width: 143px;
 	height: 42px;

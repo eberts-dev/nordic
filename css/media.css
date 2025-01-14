@@ -281,7 +281,7 @@
 	}
 
 	.service {
-		background: url('/img/service@2x.png') no-repeat;
+		background: url('../img/service@2x.png') no-repeat;
 		background-size: contain;
 	}
 
@@ -950,7 +950,7 @@
 
 	.item-link::before {
 		content: '';
-		background: url('/img/svg/arrow-down.svg') center no-repeat;
+		background: url('../img/svg/arrow-down.svg') center no-repeat;
 		position: absolute;
 		width: 14px;
 		height: 14px;
@@ -998,7 +998,7 @@
 	}
 
 	.service {
-		background: url('/img/caitering@2x.jpg') no-repeat;
+		background: url('../img/caitering@2x.jpg') no-repeat;
 		background-size: cover;
 	}
 
@@ -1060,7 +1060,7 @@
 	}
 
 	.service {
-		background: url('/img/caitering@2x.jpg') no-repeat;
+		background: url('../img/caitering@2x.jpg') no-repeat;
 		background-size: contain;
 	}
 
@@ -1245,7 +1245,7 @@
 
 	.item-link::before {
 		content: '';
-		background: url('/img/svg/arrow-down.svg') center no-repeat;
+		background: url('../img/svg/arrow-down.svg') center no-repeat;
 		position: absolute;
 		width: 14px;
 		height: 14px;
