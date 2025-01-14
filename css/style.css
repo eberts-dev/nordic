@@ -1,5 +1,5 @@
-@import 'root.css';
-@import 'font.css';
+@import '/root.css';
+@import '/font.css';
 
 header {
 	background: url('img/header-bg.png') top no-repeat;
@@ -121,16 +121,6 @@ button {
 	font-size: 18px;
 	position: relative;
 }
-
-/* .list-item__link::before {
-  content: '';
-  background: url('../img/svg/arrow-down.svg') center no-repeat;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  right: -22px;
-  top: 5px;
-} */
 
 .catering {
 	display: flex;
