@@ -1,6 +1,3 @@
-@import 'root.css';
-@import 'font.css';
-
 @media (min-width: 335px) {
 	.customers__wrapper {
 		width: 335px;

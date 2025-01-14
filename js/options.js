@@ -1,21 +1,21 @@
-var x, i, j, l, ll, selElmnt, a, b, c
+var x, i, j, l, ll, selElement, a, b, c
 
 x = document.getElementsByClassName('options__select')
 l = x.length
 for (i = 0; i < l; i++) {
-	selElmnt = x[i].getElementsByTagName('select')[0]
-	ll = selElmnt.length
+	selElement = x[i].getElementsByTagName('select')[0]
+	ll = selElement.length
 
 	a = document.createElement('DIV')
 	a.setAttribute('class', 'select-selected')
-	a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML
+	a.innerHTML = selElement.options[selElement.selectedIndex].innerHTML
 	x[i].appendChild(a)
 
 	b = document.createElement('DIV')
 	b.setAttribute('class', 'select-items select-hide')
 	for (j = 1; j < ll; j++) {
 		c = document.createElement('DIV')
-		c.innerHTML = selElmnt.options[j].innerHTML
+		c.innerHTML = selElement.options[j].innerHTML
 		c.addEventListener('click', function (e) {
 			var y, i, k, s, h, sl, yl
 			s = this.parentNode.parentNode.getElementsByTagName('select')[0]
@@ -58,7 +58,7 @@ function closeAllSelect(elmnt) {
 	xl = x.length
 	yl = y.length
 	for (i = 0; i < yl; i++) {
-		if (elmnt == y[i]) {
+		if (selElement == y[i]) {
 			arrNo.push(i)
 		} else {
 			y[i].classList.remove('select-arrow-active')
