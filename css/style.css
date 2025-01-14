@@ -244,7 +244,7 @@ main {
 }
 
 .service {
-	background: url('../img/caitering@2x.jpg') no-repeat;
+	background: url('/img/caitering@2x.jpg') no-repeat;
 	background-size: cover;
 }
 
