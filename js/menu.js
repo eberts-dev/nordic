@@ -25,13 +25,7 @@ function SubMenuWeb() {
 	var wMenu = document.getElementById('subWeb')
 	var eMenu = document.getElementById('events')
 
-	if (wMenu.style.display === 'block') {
-		wMenu.style.display = 'none'
-	} else {
-		wMenu.style.display = 'block'
-	}
-
 	if (eMenu.style.display === 'block' && wMenu.style.display === 'none') {
-		eMenu.style.display === 'block'
+		eMenu.style.display = 'block'
 	}
 }
