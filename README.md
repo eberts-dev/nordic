@@ -1,3 +1,3 @@
 # nordic
 
-Проект главной страницы
+главная страница: https://nordic-rho.vercel.app/
